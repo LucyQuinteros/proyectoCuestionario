@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" >
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+<body>
+<div>
+  <h1 id="titulo">Hola mundo</h1>
+</div>
+
+    <div >
+      <select id="Salsas" class="select">
+        <option value="1" title="mus">Mustard</option>
+        <option value="2" title="ket">Ketchup</option>
+        <option value="3" title="rel">Relish</option>
+      </select>
+
+      <button id="mus" class="btn btn-warning rm-mustard">Remove Mustard</button>
+      <button class="btn btn-danger rm-ketchup">Remove Ketchup</button>
+      <button class="btn btn-success rm-relish">Remove Relish</button>
+
+      <input id="buttonMostrarItem" type="button" value="Mostrar item Seleccionado"
+    </div>
+
+
+    <header>
+      <h1>CUESTIONARIO</h1>
+      
+    </header>
+    <div class="container">
+      <section id="p1">
+        <h3>Que tanto te gusta el frio</h3>
+        <label>
+          <input type="radio" value="1" name="p0" onclick="OpcionElegida(1,this)"> Mucho
+        </label>
+        <label>
+          <input type="radio" value="0" name="p0" onclick="OpcionElegida(1,this)"> Regular
+        </label>
+        <label>
+          <input type="radio" value="2" name="p0" onclick="OpcionElegida(1,this)"> Poco
+        </label>
+      </section>
+      <section id="p2">
+        <h3>Que tanto te gusta el calor</h3>
+        <label>
+          <input type="radio" value="0" name="p0" onclick="OpcionElegida(2,this)"> Muchisimo
+        </label>
+        <label>
+          <input type="radio" value="2" name="p0" onclick="OpcionElegida(2,this)"> Mas o menos
+        </label>
+        <label>
+          <input type="radio" value="1" name="p0" onclick="OpcionElegida(2,this)"> Nadas
+        </label>
+      </section>
+      <section id="p3">
+        <h3>Que tanto te gusta el futbol</h3>
+        <label>
+          <input type="radio" value="0" name="p0" onclick="OpcionElegida(3,this)"> Muchango
+        </label>
+        <label>
+          <input type="radio" value="1" name="p0" onclick="OpcionElegida(3,this)"> Regularsango
+        </label>
+        <label>
+          <input type="radio" value="2" name="p0" onclick="OpcionElegida(3,this)"> Nadanga
+        </label>
+      </section>
+    </div>
+
+    <input type="button" value="Sumar Todas las Respuestas" onclick="SumarTodo()" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" ></script>
+    
+    <script src="script.js"></script>
+
+
+  </body>
+</html>
